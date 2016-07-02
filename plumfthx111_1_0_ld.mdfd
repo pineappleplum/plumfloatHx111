@@ -1,0 +1,16 @@
+rd file plumfthx111_1_0_ld 0% --> 0.25% = wr The application is running before preparation.
+rd file plumfthx111_1_0_ld 0.25% = wr The application prepares to load.
+rd file plumfthx111_1_0_ld 0.25% --> 0.5% = wr The application is preparing to load.
+rd file plumfthx111_1_0_ld 0.5% = wr The application starts to load.
+rd file plumfthx111_1_0_ld 0.5% --> 99.80% = wr The application is getting reading. Loading in progress.
+rd file plumfthx111_1_0_ld 99.8% = wr Loading complete. The data on the application starts to validate.
+rd file plumfthx111_1_0_ld 99.8% --> 99.95 % = wr The application is waiting for valid data. Validating data.
+rd file plumfthx111_1_0_ld 99.95% = wr Validation complete. The application prepares its work.
+rd file plumfthx111_1_0_ld 99.95% --> 100% = wr The application is preparing its work. Finishing the data execution.
+rd file plumfthx111_1_0_ld 100% = wr Data execution complete. The aplication starts to work properly.
+sc file plumfthx111_1_0_ld 0 --> 100 % = wr Finding Updates.
+rd file plumfthx111_1_0_ld 100% ud cmpt = wr The application is up to date.
+sp file plumfthx111_1_0_ld = dc shutdown file plumfthx111_1_0_ld
+rd sts file plumfthx111_1_0_ld shutdown = wr The application is shut down.
+if run binary-Hx11P2.mdfd = rd file plumfthx111_1_0.tar.gz
+if else = cc file plumfthx111_1_0_ld

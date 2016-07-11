@@ -30,4 +30,9 @@ dc file plumfthx111_1_0_ld --> file plumfthx111_1_0_0001_ld.mdfd = Update in pro
 sp file plumfthx111_1_0_0001_ld.mdfd = dc shutdown file plumfthx111_1_0_0001_ld.mdfd
 rd sts file plumfthx111_1_0_ld shutdown = wr The application is shut down.
 if run binary-Hx11P2.mdfd = rd file plumfthx111_1_0.tar.gz
-if else = cc file plumfthx111_1_0_0001_ld.mdfd
+if else = rd abortpmfthx111.mdfd
+cc file plumfthx111_0_ld.mdfd
+rd vmzklux_0_00_0000_gu_feored.exec
+dc shutdown file vmzklux_0_00_0000_gu_feored.ppe
+dc shutdown file vmzklux_0_00_0000_gu_feored.exec
+sq pos 1, 1
